@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+/* 
+FONTS AND COLORS
+*/
+
+:root {
+  --primaryGold: #f4da9d;
+  --primaryBlack: #1e1c1a;
+  --primarySilver: #d8d5d0;
+  --primaryRed: #6b0000;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--primaryBlack);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif !important;
+}
+.testing {
+  /*   border: 0.5px solid green;
+ */
+}
+/* BUTTON */
+.book-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid var(--primaryGold);
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+.book-button:hover {
+  color: var(--primaryBlack) !important;
+  background: var(--primaryGold);
+  border-color: var(--primaryGold);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* NAVBAR */
+.navbar {
+  background: var(--primaryBlack);
+}
+.nav-text {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primaryGold) !important;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-logo {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.nav-hamburger {
+  color: var(--primaryGold) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link {
+  font-size: 1.5rem;
+  padding: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  border-bottom: solid 3px var(--primaryRed);
+}
+
+.nav-link:active {
+  display: hidden;
 }
