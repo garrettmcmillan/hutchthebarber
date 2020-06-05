@@ -11,6 +11,7 @@ FONTS AND COLORS
 body {
   font-family: 'Lato', sans-serif;
   background: var(--primaryBlack);
+  max-width: 100%;
 }
 
 h1,
@@ -22,23 +23,26 @@ h6 {
   font-family: 'Roboto', sans-serif !important;
 }
 .testing {
-  /*   border: 0.5px solid green;
- */
+  border: 0.5px solid green;
 }
 /* BUTTON */
 .book-button {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  border-radius: 5px;
-  border: 1px solid var(--primaryGold);
+  font-weight: 700;
+  background: var(--primaryBlack);
+  max-width: 45rem;
+  border: 5px solid var(--primaryGold);
+  border-radius: 0;
   font-size: 1.5rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 .book-button:hover {
-  color: var(--primaryBlack) !important;
-  background: var(--primaryGold);
-  border-color: var(--primaryGold);
+  /*   color: var(--primaryBlack) !important;
+ */
+  background: var(--primaryRed);
+  /*   border-color: var(--primaryBlack);
+ */
 }
 
 /* NAVBAR */
@@ -53,10 +57,11 @@ h6 {
 }
 
 .navbar-logo {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: bold;
 }
+
 .nav-hamburger {
   color: var(--primaryGold) !important;
 }
@@ -72,4 +77,12 @@ h6 {
 
 .nav-link:active {
   display: hidden;
+}
+
+/* HOME */
+.home-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
