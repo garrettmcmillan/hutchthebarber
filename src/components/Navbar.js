@@ -7,7 +7,14 @@ import HamburgerIcon from './HamburgerIcon';
 export default class Navbar extends Component {
     render() {
         return (
-            <rb.Navbar className="navbar px-md-5" fixed="top" expand="lg">
+            
+
+            <rb.Navbar 
+                collapseOnSelect
+                className="navbar px-md-5"
+                fixed="top"
+                expand="lg"
+            >
                 <rb.Navbar.Brand 
                     className="navbar-logo nav-text d-none d-lg-block"
                     href="/">
@@ -21,7 +28,8 @@ export default class Navbar extends Component {
                         />
                 </rb.Navbar.Brand>
                 <rb.Navbar.Brand
-                    className="navbar-logo nav-text d-block d-lg-none">
+                    className="navbar-logo nav-text d-block d-lg-none"
+                    href="/">
                     <span>
                         Zack
                         <br/>
@@ -31,16 +39,23 @@ export default class Navbar extends Component {
                     </span>
                 </rb.Navbar.Brand>
                 <rb.Container className="justify-content-end">
-                <rb.Navbar.Toggle className="nav-hamburger" aria-controls="basic-navbar-nav">
+                <rb.Navbar.Toggle 
+                    className="nav-hamburger"
+                    aria-controls="basic-navbar-nav"
+                >
                     <HamburgerIcon />
                 </rb.Navbar.Toggle>
                 </rb.Container>
-                <rb.Navbar.Collapse className=" nav-text justify-content-end" id="basic-navbar-nav">
-                    <rb.Nav className="mx-3">
+                <rb.Navbar.Collapse 
+                    className=" nav-text justify-content-end"
+                    id="basic-navbar-nav"
+                    onToggle
+                >
+                    <rb.Nav onClick={this.setNavExpanded} className="mx-3">
                         <rb.Nav.Link 
                             as={Link}
                             to="/"  
-                            className="nav-text nav-link mx-3">
+                            className="nav-text nav-link mx-3 ">
                                 home
                         </rb.Nav.Link>
                         <rb.Nav.Link 
