@@ -10,7 +10,6 @@ export default class Navbar extends Component {
             
 
             <rb.Navbar 
-                collapseOnSelect
                 className="navbar px-md-5"
                 fixed="top"
                 expand="lg"
@@ -19,7 +18,7 @@ export default class Navbar extends Component {
                     className="navbar-logo nav-text d-none d-lg-block"
                     href="/">
                         <img
-                            fluid
+                            fluid="true"
                             src={logo}
                             width="300"
                             height="250"
@@ -42,6 +41,7 @@ export default class Navbar extends Component {
                 <rb.Navbar.Toggle 
                     className="nav-hamburger"
                     aria-controls="basic-navbar-nav"
+                    onClick={this.setNavExpanded}
                 >
                     <HamburgerIcon />
                 </rb.Navbar.Toggle>
@@ -49,12 +49,12 @@ export default class Navbar extends Component {
                 <rb.Navbar.Collapse 
                     className=" nav-text justify-content-end"
                     id="basic-navbar-nav"
-                    onToggle
                 >
-                    <rb.Nav onClick={this.setNavExpanded} className="mx-3">
+                    <rb.Nav className="mx-3">
                         <rb.Nav.Link 
                             as={Link}
-                            to="/"  
+                            to="/"
+                            href="/"
                             className="nav-text nav-link mx-3 ">
                                 home
                         </rb.Nav.Link>

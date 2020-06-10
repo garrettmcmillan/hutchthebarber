@@ -79,9 +79,6 @@ h6 {
   border-bottom: solid 3px var(--primaryRed);
 }
 
-.nav-link:active {
-}
-
 /* HOME */
 .home-container {
   display: flex;
@@ -171,7 +168,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   margin-bottom: 0;
-  padding: 0 0.5rem 0 0.65rem;
+  padding: 0 0.5rem 0 0.65rem !important;
 }
 
 .card-img {
@@ -196,9 +193,13 @@ h6 {
 }
 
 .social-title {
-  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  color: var(--primaryGold);
+  letter-spacing: 0.15rem !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem !important;
   padding: 0 !important;
-  margin-top: 5%;
 }
 
 .social-link-list {
@@ -222,6 +223,63 @@ h6 {
   border-bottom: 3px solid var(--primaryRed);
 }
 
+/* SERVICES */
+
+.services-container {
+  text-align: center;
+  height: fit-content;
+}
+
+.services-div {
+  margin-top: 5.5%;
+  background-color: transparent;
+  border: none;
+}
+
+.service-card-container {
+  margin-top: 0;
+}
+
+.service-card {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.service-title {
+  padding: 0.5rem 0.5rem 0.5rem 0.65rem !important;
+}
+.services-title {
+  font-family: 'Lato', sans-serif;
+  color: var(--primaryGold);
+  letter-spacing: 0.15rem !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem !important;
+  padding: 0 !important;
+}
+
+.service-card-img {
+  max-width: 30vw;
+}
+
+.service-price {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.service-text {
+  font-family: 'Lato', sans-serif;
+  color: var(--primaryGold) !important;
+  letter-spacing: 0.15rem !important;
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.service-button-div {
+  width: fit-content;
+}
+
 /* MEDIA QUERIES */
 
 /* LARGER SCREENS */
@@ -231,6 +289,9 @@ h6 {
     flex-direction: column !important;
   }
   .about-div {
+    margin-top: 15%;
+  }
+  .services-div {
     margin-top: 15%;
   }
   .card-img {
@@ -252,6 +313,9 @@ h6 {
 
 @media (max-width: 768px) {
   .about-div {
+    margin-top: 30%;
+  }
+  .services-div {
     margin-top: 30%;
   }
   .about-title {
@@ -279,5 +343,8 @@ h6 {
   }
   .social-icon {
     border-bottom: 3px solid var(--primaryRed);
+  }
+  .services-div {
+    margin-top: 40%;
   }
 }
