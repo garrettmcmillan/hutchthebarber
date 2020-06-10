@@ -56,7 +56,6 @@ export default class About extends Component {
                                 </Nav.Item>
                             </Nav>
                             </div>
-                            
                             </Card.Text>
                             
                         </div>

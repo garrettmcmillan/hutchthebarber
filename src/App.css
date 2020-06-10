@@ -172,7 +172,8 @@ h6 {
 }
 
 .card-img {
-  max-width: 30vw;
+  max-width: 30%;
+  max-height: 40rem;
   border-radius: 0;
 }
 .about-text {
@@ -244,6 +245,7 @@ h6 {
   margin-bottom: 5%;
   background-color: transparent;
   border-radius: 0;
+  padding-top: 3rem;
 }
 
 .service-title {
@@ -260,7 +262,8 @@ h6 {
 }
 
 .service-card-img {
-  max-width: 30vw;
+  max-width: 30%;
+  max-height: 20rem;
 }
 
 .service-price {

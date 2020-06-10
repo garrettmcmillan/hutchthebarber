@@ -9,12 +9,10 @@ export default class ServicesCard extends Component {
         return (
             <div className="service-card-container">
                 <Card className="service-card align-items-center ">
-                    <br/>
                     <Card.Title
-                        className="services-title d-block d-lg-none">
+                        className="services-title mb-5 d-block d-lg-none">
                             {title}
                     </Card.Title>
-                    <br/>
                     <div className="about-content-div d-flex flex-lg-row flex-column">
                         <Card.Img
                             src={img}
@@ -35,28 +33,6 @@ export default class ServicesCard extends Component {
                         </div>
                         </div>
                     </Card>
-
-
-
-
-
-
-                {/*  <div className="service">
-                <p className="service">
-                    hi {this.props.service.title} data
-                </p>
-                <p>
-                    hi {this.props.service.info} data
-                </p>
-                <p className="service">
-                    hi {this.props.service.price} data
-
-                </p>
-                <p className="service">
-                    hi {this.props.service.img} data
-                </p>
-                
-            </div> */}
             </div>
         )
     }
