@@ -241,6 +241,7 @@ h6 {
 }
 
 .service-card {
+  margin-bottom: 5%;
   background-color: transparent;
   border-radius: 0;
 }

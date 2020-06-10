@@ -17,7 +17,7 @@ export default class Services extends Component {
                 <div className="home-container-spacer-sm d-block d-lg-none"></div>
                 <div className="services-div"> 
                     <span className="about-title service-title"> 
-                        services
+                        my services
                     </span>
                 </div>
                 <div className="">

@@ -90,23 +90,6 @@ export default class About extends Component {
                         </Card.Text>
                         </div>
                     </Card>
-
-                    {/* <Button
-                        target="_blank"
-                        href="https://booksy.com/en-us/429169_zack-hutchinson_barber-shop_108476_winston?do=invite&_branch_match_id=783405538344311294"
-                        className="testing book-button book-button-home d-none d-lg-block"
-                        variant="outline-*" 
-                        size="lg">
-                        Book An Appointment
-                    </Button>
-                    <Button
-                        target="_blank"
-                        href="https://booksy.com/en-us/429169_zack-hutchinson_barber-shop_108476_winston?do=invite&_branch_match_id=783405538344311294"
-                        className="testing book-button book-button-home d-block d-lg-none"
-                        variant="outline-*" 
-                        size="lg">
-                        Book Now
-                    </Button> */}
                 </div>
             </div>
         )
