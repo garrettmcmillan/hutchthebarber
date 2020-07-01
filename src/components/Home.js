@@ -4,8 +4,9 @@ import Button from 'react-bootstrap/Button';
 export default class Home extends Component {
     render() {
         return (
+            <>
+            <div className="home-container-image" ></div>
             <div className="home-container">
-                
                 <div className="home-text-div">
                     <div className="home-container-spacer d-none d-lg-block"></div>
                     <div className="home-container-spacer-sm d-block d-lg-none"></div>
@@ -13,7 +14,7 @@ export default class Home extends Component {
                     <div className="home-title d-none d-lg-block">
                     zack hutchinson: barber
                     </div>
-                    <div className="home-text mx-5">
+                    <div className="home-text mx-3">
                     an old style barber at the hair den in winston-salem, nc
                     </div>
                     <Button
@@ -33,9 +34,8 @@ export default class Home extends Component {
                         Book Now
                     </Button>
                 </div>
-                    
-            </div>
-            
+            </div> 
+            </>          
         )
     }
 }

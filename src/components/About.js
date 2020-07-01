@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
+import AboutImg from '../images/About.jpg';
+import BarberShop from '../images/BarberShop.jpg';
 
 
 export default class About extends Component {
@@ -15,9 +17,10 @@ export default class About extends Component {
                         <span className="about-title"> 
                             about hutch
                         </span>
-                        <div className="about-content-div mt-5 d-flex flex-lg-row flex-column">
+                        <div className="about-content-div mt-5 pt-5 d-flex flex-lg-row flex-column">
                             <Card.Img
-                                src="https://images.unsplash.com/photo-1586632501637-20fed04db298?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                src={AboutImg}
+                                alt="image of zack"
                                 className="card-img"
                             />
                             <Card.Text className="about-text">
@@ -64,9 +67,10 @@ export default class About extends Component {
                         <span className="about-title">
                             the hair den
                         </span>
-                        <div className="about-content-div mt-5 d-flex flex-md-row flex-column">
+                        <div className="about-content-div mt-5 pt-5 d-flex flex-md-row flex-column">
                         <Card.Img
-                                src="https://images.unsplash.com/photo-1525708117204-bbe93e711abb?ixlib=rb-1.2.1&auto=format&fit=crop&w=3034&q=80"
+                                src={BarberShop}
+                                alt="image of the shop"
                                 className="card-img"
                             />
                         <Card.Text className="about-text">

@@ -47,27 +47,27 @@ export default class Navbar extends Component {
                 </rb.Navbar.Toggle>
                 </rb.Container>
                 <rb.Navbar.Collapse 
-                    className=" nav-text justify-content-end"
+                    className="nav-text justify-content-end"
                     id="basic-navbar-nav"
                 >
-                    <rb.Nav className="mx-3">
+                    <rb.Nav className="mx-3" id="basic-navbar-nav">
                         <rb.Nav.Link 
                             as={Link}
                             to="/"
                             href="/"
-                            className="nav-text nav-link mx-3 ">
+                            className="nav-text nav-link mx-3  navbar-collapse" data-toggle="collapse" data-target="#basic-navbar-nav">
                                 home
                         </rb.Nav.Link>
                         <rb.Nav.Link 
                             as={Link}
                             to="/about" 
-                            className="nav-text nav-link mx-3">
+                            className="nav-text nav-link mx-3   navbar-collapse" data-toggle="collapse" data-target="navbar-collapse.show">
                                 about
                             </rb.Nav.Link>
                         <rb.Nav.Link 
                             as={Link}  
                             to="/services" 
-                            className="nav-text nav-link mx-3">
+                            className="nav-text nav-link mx-3  navbar-collapse" data-toggle="collapse" data-target="navbar-collapse.show">
                                 services
                         </rb.Nav.Link>
                     </rb.Nav>

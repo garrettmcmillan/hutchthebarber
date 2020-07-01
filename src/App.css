@@ -41,6 +41,7 @@ h6 {
 }
 .book-button:hover {
   background: var(--primaryBlack);
+  transition: 0.5s ease-in-out;
 }
 
 /* NAVBAR */
@@ -77,20 +78,31 @@ h6 {
 
 .nav-link:hover {
   border-bottom: solid 3px var(--primaryRed);
+  transition: 0.5s ease-in-out;
 }
 
 /* HOME */
 .home-container {
-  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.home-container-image {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1569832947682-77c9164611df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1917&q=80);
+  background-image: url('./images/HomeImg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--primaryBlack);
   background-size: cover;
 }
-
 .home-container-spacer {
   height: 15rem;
 }
@@ -177,6 +189,12 @@ h6 {
   max-height: 40rem;
   border-radius: 0;
 }
+
+.card-img:hover {
+  filter: blur(6px);
+  transition: 1s ease-in-out;
+}
+
 .about-text {
   font-family: 'Lato', sans-serif;
   color: var(--primaryGold) !important;
@@ -265,6 +283,10 @@ h6 {
 .service-card-img {
   max-width: 30%;
   max-height: 20rem;
+}
+.service-card-img:hover {
+  filter: blur(6px);
+  transition: 1s ease-in-out;
 }
 
 .service-price {

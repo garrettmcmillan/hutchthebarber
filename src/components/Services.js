@@ -20,7 +20,7 @@ export default class Services extends Component {
                         my services
                     </span>
                 </div>
-                <div className="">
+                <div className="mt-5">
                     {servicesList}
                 </div>
                 <br/>
